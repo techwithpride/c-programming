@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-#define MAX 4
+#define MAX 5
 int stack[MAX];
 int top=-1;
 void push();
@@ -47,7 +47,7 @@ void push()
     int item;
     if(top>=MAX-1)
     {
-        printf("\n[OVERFLOW DETECTED] Cannot push! Stack is completely full(Max size= %d).\n");
+        printf("\n[OVERFLOW DETECTED] Cannot push! Stack is completely full(Max size= %d).\n", MAX  );
         return;
     }
     printf("Enter integer element to push: ");
